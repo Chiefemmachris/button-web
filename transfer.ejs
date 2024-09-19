@@ -1,0 +1,108 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="/css/banking.css">
+</head>
+<body>
+    <ul>
+        <%if(messages.failure_msg) { %>
+        <li><%= messages.failure_msg %></li>
+        <% } %>
+        </ul>
+  
+        <ul>
+          <%if(messages.error) { %>
+          <li><%= messages.error %></li>
+          <% } %>
+          </ul>
+
+    <div class="wrappercartonItransfer">
+                  
+        <div class="cartonItransfer">
+          <i class="fa fa-close closetransfericon"></i>
+          <form action="/users/transfer" method="POST">
+                <div id="cartonItis">
+        
+                    <div  class="cartonItisdiv">
+                    <select name="TitleBank" id="banktitle" type="text" required>
+                        <option value="bankoption">Select Destination Bank <i class="fa fa-bank"></i></option>
+                        <option value="Button">Button</option>
+                        <option value="Paypal">Paypal</option>
+                        <option value="Zelle">Zelle</option>
+                        <option value="Flutterwave">Flutterwave</option>
+                        <option value="Skrill">Skrill</option>
+                        <option value="Tutto">Tutto</option>
+                        <option value="EIfinance">EIfinance</option>
+                    </select>
+                    
+        
+                    
+                    <div class="inputboxtransfer">
+                        <span class="iconkR">Pay id/email/account no</span>
+                        <input type="text" name="payId" id="payId" placeholder='Pay id/email/account no' required>
+                        
+                    </div>
+                    </div>
+
+                    <div class="cartonItisdiv">
+                    <div class="inputboxtransfer">
+                        <span class="iconkR">Amount ($)</span>
+                        <input type="text" name="Amount" id="Amount" placeholder='0.00' required>
+                    </div>
+                    
+                    
+                    <div class="inputboxtransfer">
+                        <span class="iconkR">Payment Pin</span>
+                        <input type="password" id="PaymentPin" name="PaymentPin" placeholder='PaymentPin' required>
+                        <label for=""></label>
+                    </div>
+                    </div>
+
+                    
+                
+                    
+                    
+                    
+                    
+                
+                
+                    </div>
+                
+                <div id="cartonFtransfer">
+                
+                
+        
+                    <div class="letterchoice">
+                    
+                    <h5>The Transaction will be debited from the reserve of your Button Portfolio <br>
+                    Easily click on instruments and other portfolio to swap assets to reserve.<br>
+                    Having difficulties? <a href="">learn more</a></h5>
+                    </div>
+                
+                
+                
+        
+                <button type="submit">Transfer</button>
+                
+                    </div>
+        
+                <div id="cartonktransfer" class="transferitnow"><span>BUTTON INC, Leventus Drive, Awka, AF 1001</span></div>
+          </form>
+        </div>
+    </div>
+
+    <div class="wrappertrxtocon">
+        <div id="trxtocon" class="trxtoconn">
+          <h4>you are about to transfer $30,000 to Rio fedinald <br>
+          do you wish to continue?</h4>
+
+          <div id="cancelcontinue">
+            <button class="finalcancel">Cancel</button>
+            <button class="final">Continue</button>
+          </div>
+        </div>
+      </div>
+</body>
+</html>

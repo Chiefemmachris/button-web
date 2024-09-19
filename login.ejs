@@ -1,0 +1,58 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loginform</title>
+    <link rel="stylesheet" type="text/css" href="/css/buttonhome.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="/css/registerbutton.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+ 
+      <ul>
+      <%if(messages.success_msg) { %>
+      <li><%= messages.success_msg %></li>
+      <% } %>
+      </ul>
+
+      <ul>
+        <%if(messages.error) { %>
+        <li><%= messages.error %></li>
+        <% } %>
+        </ul>
+        <i class="fa-solid fa-beer-mug-empty"></i>
+    <div class="form-box login">
+      <form action="/users/login" method="post"> 
+        <h2>SIGN IN</h2>
+        
+          <div class="inputbox">
+            <span class="icon"><i class="fa fa-envelope"></i></span>
+            <input type="email" name="email" id="email" placeholder='Email' required>
+            <label for=""></label>
+          </div>
+        
+        
+          <div class="inputbox">
+            <span class="icon"><i class="fa fa-key"></i></span>
+            <input type="password" name="password" id="password" placeholder="password"/>
+            <label class="passwordlabel" for=""></label>
+          </div>
+        
+          <div class="rememberforgot">
+            <label for=""><input type="checkbox">Remember me</label>
+            <a href="">Forgot Password?</a>
+        
+          <button type="submit" class="btn"> <input type="submit"> LOG IN</button>
+          
+          <div class="loginregister">
+            <span>Dont have an account?<a href="">Register</a></span>
+            <a href="/users/createPayID">create pay ID</a>
+          </div>
+        
+      </div>
+      </form>
+    </div>
+</body>
+</html>

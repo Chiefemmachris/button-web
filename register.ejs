@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BUTTON</title>
+  <link rel="stylesheet" type="text/css" href="/css/buttonhome.css">
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="/css/registerbutton.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   
+
+
+</head>
+
+<body>
+
+    
+
+  <section id="Header">
+    <div class="front">
+      
+    
+    <div class="search">
+    <i class="fa fa-search"></i>
+    </div>
+    <div>
+       <h3>BUTTON</h3>
+    </div>
+    <div id='menu1' class="menu">
+     <i class="fa fa-bars"></i>
+    </div>
+    
+    <div id="mobile">
+      <div class="search2">
+        <i class="fa fa-search"><h5>Search</h5></i>
+      </div>
+      <div class="search2">
+        <i class="fa fa-support"><h5>Support</h5></i>
+      </div>
+      <div class="search2 signink"><a href="/users/login">
+        <i class="fa fa-sign-in"><h5>Sign in</h5></i></a>
+      </div>
+        
+    </div>
+      
+      
+    </div>
+    <div id="navbar" >
+      <i id="closer1"  class="fa fa-close"></i>
+      <ul class="listedmenu">
+        <li>Products</li>
+        <li>About</li>
+        <li>Customer Service</li>
+        <li class="OaA">Open an Account</li>
+        <li class="signin">Sign in</li>
+      </ul>
+    </div>
+   
+  
+  
+  
+  
+  <div class="wrapper">
+    <i class="fa fa-close firsticon"></i>
+ 
+    <div class="form-box login">
+      
+      <h2>SIGN IN</h2>
+      <form action="##">
+        <div class="inputbox">
+          <span class="icon"><i class="fa fa-envelope"></i></span>
+          <input type="email" placeholder='Email' required>
+          <label for=""></label>
+        </div>
+      </form>
+      <form action="##">
+        <div class="inputbox">
+          <span class="icon"><i class="fa fa-key"></i></span>
+          <input type="password" name="" id="" value="" placeholder="password"/>
+          <label class="passwordlabel" for=""></label>
+        </div>
+      </form>
+        <div class="rememberforgot">
+          <label for=""><input type="checkbox">Remember me</label>
+          <a href="">Forgot Password?</a>
+        </div>
+        <button type="submit" class="btn">LOG IN</button>
+        
+        <div class="loginregister">
+          <span>Dont have an account?<a href="">Register</a></span>
+        </div>
+      
+    </div>
+  </div>
+  
+  <div class="wrapperkt">
+  <div class="wrapperk">
+    <i class="fa fa-close firsticonk"></i>
+ 
+    <div class="form-boxk logink">
+      
+      <h2>SIGN IN</h2>
+      <form action="##">
+        <div class="inputboxk">
+          <span class="iconk"><i class="fa fa-envelope"></i></span>
+          <input type="email" placeholder='Email' required>
+          <label for=""></label>
+        </div>
+      </form>
+      <form action="##">
+        <div class="inputboxk">
+          <span class="iconk"><i class="fa fa-key"></i></span>
+          <input type="password" name="" id="" value="" placeholder="password"/>
+          <label class="passwordlabelk" for=""></label>
+        </div>
+      </form>
+        <div class="rememberforgotk">
+          <label for=""><input type="checkbox">Remember me</label>
+          <a href="">Forgot Password?</a>
+        </div>
+        <button type="submit" class="btn">LOG IN</button>
+        
+        <div class="loginregisterk">
+          <span>Dont have an account?<a href="">Register</a></span>
+        </div>
+      
+    </div>
+  </div>
+  </div>
+
+
+</div>
+
+
+  </section>
+  <div id="rowbar" >
+    
+    <ul class="listedmen">
+      <li>Products</li>
+      <li>About</li>
+      <li>Customer Service</li>
+      <li class="OaA">Open an Account</li>
+      <li class="">Governance</li>
+    </ul>
+  </div>
+
+  <ul>
+    <% if(typeof errors != 'undefined') { %> <% errors.forEach(errors=>{ %>
+      <li><%= errors.message %></li>
+      <%  }) %> <%  } %>
+  </ul>
+
+  <div id="cartonA">
+    <div id="cartonB">
+      <h2>REGISTER</h2>
+      <div>
+        <h4>why register?</h4>
+        <ul>
+          <li>trade indices across different portfolios</li>
+          <li>Get access to financial brokers for sessions on financial advice</li>
+          <li>Set a retirement plan on 401ks</li>
+          <li>Get access to the leventis bond market</li>
+        </ul>
+      </div>
+      <span>trade &nbsp<h5>Leventis®</h5>&nbsp bonds.</span>
+    </div>
+    <div id="cartonC">
+      <div id="cartonD">
+        <div id="cartonG">
+          Step One
+          <p>Registration</p>
+        </div>
+        <div id="cartonH">
+          Step Two
+          <p>Confirmation</p>
+        </div>
+      </div>
+      <div id="cartonE">
+        <form action="/users/register" method="POST">
+        <div id="cartonI">
+
+          
+            <select name="Title" id="title" type="text">
+              <option value="">Title</option>
+              <option value="">Engr</option>
+              <option value="">Mr</option>
+              <option value="">Dr</option>
+              <option value="">Arc</option>
+              <option value="">Pharm</option>
+              <option value="">Miss</option>
+              <option value="">Mrs</option>
+            </select>
+          
+
+          
+            <div class="inputboxkR">
+              <span class="iconkR"><i class="fa fa-asterisk"></i></span>
+              <input type="text" name="firstname" id="firstname" placeholder='First Name' required>
+              <label for=""></label>
+            </div>
+          
+
+          
+            <div class="inputboxkR">
+              <span class="iconkR"><i class="fa fa-asterisk"></i></span>
+              <input type="text" id="lastname" name="lastname" placeholder='Last Name' required>
+              <label for=""></label>
+            </div>
+          
+
+          
+            <div class="inputboxkR">
+              <span class="iconkR"><i class="fa fa-envelope"></i></span>
+              <input type="email" name="Email" id="Email" placeholder='Email' required>
+              <label for=""></label>
+            </div>
+          
+          
+            <div class="inputboxkR">
+              <span class="iconkR"><i class="fa fa-asterisk"></i></span>
+              <input type="text" id="jobtitle" name="jobtitle" placeholder='Job Title' required>
+              <label for=""></label>
+            </div>
+          
+
+          
+            <div class="inputboxkR">
+              <span class="iconkR"><i class="fa fa-asterisk"></i></span>
+              <input type="text" id="company" name="company" placeholder='Company' required>
+              <label for=""></label>
+            </div>
+          
+
+          
+            <select name="procar" id="procar" >
+              <option value="">Professional Carrier</option>
+              <option value="">INSTITUTION</option>
+              <option value="">GOVERNMENT REPRESENTATIVE</option>
+              <option value="">INDIVIDUAL INVESTOR</option>
+              <option value="">STOCK BROKER</option>
+              <option value="">REGULATORY</option>
+              <option value="">INSURANCE MANAGER</option>
+              <option value="">ETF FUND MANAGER</option>
+              <option value="">FINANCIAL ADVISOR</option>
+              <option value="">ASSET INVESTMENT MANAGER</option>
+              <option value="">EXCHANGE</option>
+              <option value="">ACADEMIC</option>
+              <option value="">ASSET OWNER</option>
+              <option value="">NOTA</option>
+            </select>
+          
+        <div id="cartonJ">
+          
+            <div class="inputboxkR">
+              <span class="iconkR"><i class="fa fa-map"></i></span>
+              <input type="text" id="country" name="country" placeholder='Country' required>
+              <label for=""></label>
+            </div>
+          
+          
+            <div class="inputboxkR">
+              <span class="iconkR"><i class="fa fa-map-pin"></i></span>
+              <input type="password" id="password" name="password" placeholder='password' required>
+              <label for=""></label>
+            </div>
+
+            <div class="inputboxkR">
+              <span class="iconkR"><i class="fa fa-map-pin"></i></span>
+              <input type="password" id="password2" name="password2" placeholder='Confirm password' required>
+              <label for=""></label>
+            </div>
+          
+          
+        </div>
+        
+      </div>
+      
+      <div id="cartonF">
+        
+          <p><strong> Choose one of the following options: </strong></p>
+
+          <div class="newsletterchoice">
+          <h4><input type="radio">I opt in to receiving thought leadership and information from Button Indices by email. </h4><br>
+          <h4><input type="radio">I opt out of receiving email communications from Button Indices. </h4><br>
+          This may include the most current research, newsletters, and event and webinar invitations.
+          </div>
+        
+        
+        
+
+        <button> <input type="submit" value="register"> Next</button>
+        
+      </div>
+
+      <div id="cartonk"><span>BUTTON INC, Leventus Drive, Awka, AF 1001</span></div>
+        </form>
+    </div>
+    
+  </div>
+</div>
+  <section id="disclaimersection">
+    <h3>
+      Disclaimer
+    </h3>
+    <h5>
+    All investing is subject to risk including the possible loss of the money you invest.
+ Button is owned by its funds, which are owned by Button's fund shareholder clients.
+ The experiences of any Button client may not be representative of the experience of other Button's clients and are not a guarantee of future investment performance or success.
+ Advice services are provided by Button Advisers, Inc., a registered investment advisor, or by Leventis world bank, an asset financial institution registered with the button umbrella.
+ </h5>
+ 
+ 
+  </section>
+ 
+  <footer class="footing">
+   
+    <div class="footinfo">
+      <a href="">About Button indices</a>
+      <a href="">Our Services</a>
+      <a href="">Societal responsibility</a>
+      <a href="">History</a>
+      <a href="">Leadership</a>
+      <a href="">Careers</a>
+    </div>
+    <div class="socialmediahandles">
+      <i class="fa fa-facebook-square"></i>
+      <img src="/BUTTON FRONT END WEBSITE /square-x-twitter.svg" alt="">
+      <i class="fa fa-youtube-play"></i>
+      <img src="/BUTTON FRONT END WEBSITE /linkedin.svg" alt="/BUTTON FRONT END WEBSITE /linkedin.svg">
+    </div>
+    <div class="endnote">
+       © 2024 The Button Group, Inc. All rights reserved. Button Terminals, distributor of Button Funds. Your use of this site signifies that you accept our terms & conditions of use.
+    </div>
+  </footer>
+ 
+ <script src ="buttonhome.js"> </script>
+ </body>
+ 
+ </html>

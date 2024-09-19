@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Pay ID</title>
+</head>
+<body>
+
+
+    <p>Your session ID: <%= user.id %></p>
+    <form action="/users/createPayID" method="post">
+
+        <ul>
+            <%if(messages.success_msg) { %>
+            <li><%= messages.success_msg %></li>
+            <% } %>
+            </ul>
+
+        <ul>
+            <% if(typeof errors != 'undefined') { %> <% errors.forEach(errors=>{ %>
+              <li><%= errors.message %></li>
+              <%  }) %> <%  } %>
+        </ul>
+        <input type="text" id="PayID" name="PayID" placeholder="create Pay ID">
+        <input type="text" id="newPayID" name="newPayID" placeholder="repeat Pay ID">
+        <i class="fa-solid fa-beer-mug-empty"></i>
+        <button type="submit" value="createPayID">Change</button>
+    </form>
+</body>
+</html>
